@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+		{% block title %}
+			My amazing site
+		{% endblock title %}
+		</title>
+	</head>
+	<body>
+		<div style="width:100%; border: 1px solid black">
+			<p>Hi there!  This is the base html</p>
+		</div>
+	{% block body %}
+	{% endblock body %}
+	</body>
+	{% block scripts %}
+	{% endblock scripts %}
+</html>

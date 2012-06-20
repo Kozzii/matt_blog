@@ -11,7 +11,7 @@ from django.utils import timezone
 class UserProfile(models.Model):
 	user = models.OneToOneField(User)
 	def __unicode__(self):
-		return self.user
+		return self.user.username
 
 def create_user_profile(sender, instance, created, **kwargs):
 	if created:

@@ -12,5 +12,9 @@ class Post(models.Model):
 	body = models.TextField()
 	published = models.DateTimeField(default=datetime.now())
 	categories = models.ManyToManyField(Category)
+
 	def __unicode__(self):
 		return self.title
+
+	class Meta:
+		ordering = ['-published']

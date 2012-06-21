@@ -18,8 +18,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    (r'^$', direct_to_template, {'template': 'base.html'}),
-    (r'^$', static_page, {'template': 'base'}),
+    # (r'^$', direct_to_template, {'template': 'base.html'}),
+    # (r'^$', static_page, {'template': 'base'}),
+    (r'^$', include('blog.urls')),
     (r'^(?P<template>\w+)/$', static_page),
 )
 if settings.DEBUG:

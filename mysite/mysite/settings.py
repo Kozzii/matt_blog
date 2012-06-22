@@ -1,4 +1,4 @@
-# Django settings for blogProjectMain project.
+# Django settings for mysite project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -11,11 +11,11 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'mydb',                      # Or path to database file if using sqlite3.
-        'USER': 'admin',                      # Not used with sqlite3.
-        'PASSWORD': 'admin',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '',                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
@@ -27,7 +27,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -81,7 +81,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'baz@(6*&amp;hu12dy67&amp;2f6mf2=1_pmxi+@jur_t^pavkj+9_yc$%'
+SECRET_KEY = '$*pzym6ntk7rkb6a9xy8=ns2+$lom9@b++_nx%pitno3g)dr6q'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -100,16 +100,15 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'blogProjectMain.urls'
+ROOT_URLCONF = 'mysite.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'blogProjectMain.wsgi.application'
+WSGI_APPLICATION = 'mysite.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/kozzii/repo/blogProj/blogProjectMain/templates'
 )
 
 INSTALLED_APPS = (
@@ -120,9 +119,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
+    # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    'django.contrib.admindocs',
+    # 'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging
